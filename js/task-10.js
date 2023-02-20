@@ -1,7 +1,3 @@
-function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
-}
-
 const controls = document.querySelector("#controls");
 const input = controls.querySelector("input");
 const createBtn = controls.querySelector("button[data-create]");
@@ -31,8 +27,11 @@ function destroyBoxes() {
   boxesContainer.innerHTML = "";
 }
 
+//function getRandomHexColor() {
+// return `#${Math.floor(Math.random() * 16777215)
+//   .toString(16)
+//   .padStart(6, 0)}`;
+//}
 function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215)
-    .toString(16)
-    .padStart(6, 0)}`;
+  return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
